@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<link rel="stylesheet" href="/styles/style.css">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+    h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #555;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+    button {
+      width: 100%;
+      background: #4CAF50;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Formulário</h1>  
+    <form method="POST" action="/" autocomplete="off">
+      <label>Nome:</label>
+      <input type="text" name="nome" value="<%= typeof valores !== 'undefined' ? valores.nome : '' %>" required />
+      
+      <label>Email:</label>
+      <input type="email" name="email" value="<%= typeof valores !== 'undefined' ? valores.email : '' %>" required />
+      
+      <label>Telefone:</label>
+      <input type="tel" name="telefone" value="<%= typeof valores !== 'undefined' ? valores.telefone : '' %>" required />
+      
+      <label>Mensagem:</label>
+      <textarea name="mensagem" rows="4" required><%= typeof valores !== 'undefined' ? valores.mensagem : '' %></textarea>
+      
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
