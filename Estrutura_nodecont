@@ -1,0 +1,39 @@
+└── nodecont
+    ├── app
+    │   ├── index.js
+    │   ├── Mensagem.js
+    │   ├── package.json
+    │   ├── package-lock.json
+    │   ├── public
+    │   │   └── styles
+    │   │       └── style.css
+    │   └── views
+    │       ├── form.ejs
+    │       └── resposta.ejs
+    ├── client
+    │   ├── dist
+    │   │   ├── assets
+    │   │   │   ├── index-B8mkNrkV.js
+    │   │   │   └── index-DxBsFbUY.css
+    │   │   ├── index.html
+    │   │   └── vite.svg
+    │   ├── eslint.config.js
+    │   ├── index.html
+    │   ├── package.json
+    │   ├── package-lock.json
+    │   ├── public
+    │   │   └── vite.svg
+    │   ├── README.md
+    │   ├── src
+    │   │   ├── App.css
+    │   │   ├── App.jsx
+    │   │   ├── assets
+    │   │   │   └── react.svg
+    │   │   ├── index.css
+    │   │   └── main.jsx
+    │   └── vite.config.js
+    ├── Gemfile
+    ├── package.json
+    ├── package-lock.json
+    └── README.md
+
